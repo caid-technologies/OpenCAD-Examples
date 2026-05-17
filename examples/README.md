@@ -6,11 +6,25 @@ teams.
 
 ## Included scripts
 
-- `hardware_mounting_bracket.py` — mechanical mounting bracket with fastener holes
-- `hardware_pcb_carrier.py` — carrier plate for a controller or sensor PCB
-- `software_hmi_panel.py` — front panel for a software-driven operator interface
-- `firmware_programmer_fixture.py` — fixture plate for firmware flashing or debug access
-- `full_device_cable_grommet.py` — cable-management part built from primitive booleans
+### Hardware
+
+- `hardware/hardware_mounting_bracket.py` — mechanical mounting bracket with fastener holes
+- `hardware/hardware_pcb_carrier.py` — carrier plate for a controller or sensor PCB
+
+### Software
+
+- `software/software_hmi_panel.py` — front panel for a software-driven operator interface
+
+### Firmware
+
+- `firmware/firmware_programmer_fixture.py` — fixture plate for firmware flashing or debug access
+
+### Full device
+
+- `device/full_device_cable_grommet.py` — cable-management part built from primitive booleans
+
+### Agents
+
 - `agents/generate_mounting_bracket_code.py` — agent-driven example-style code generation
 
 ## Running an example
@@ -18,7 +32,7 @@ teams.
 From the repository root:
 
 ```bash
-python -m opencad.cli run examples/hardware_mounting_bracket.py \
+python -m opencad.cli run examples/hardware/hardware_mounting_bracket.py \
   --export bracket.step \
   --tree-output bracket-tree.json
 ```
